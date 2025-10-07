@@ -1,0 +1,24 @@
+# General
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Node
+**/node_modules/
+
+# Next.js
+fhevm-frontend/.next/
+fhevm-frontend/out/
+fhevm-frontend/.vercel/
+
+# Hardhat
+fhevm-hardhat/artifacts/
+fhevm-hardhat/cache/
+fhevm-hardhat/fhevmTemp/
+
+# Env
+*.env
+*.env.local
+*.env.*.local
