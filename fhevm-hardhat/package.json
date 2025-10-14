@@ -1,5 +1,5 @@
 {
-  "name": "scriptvault-hardhat",
+  "name": "fhevm-hardhat",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -32,4 +32,3 @@
     "@openzeppelin/contracts": "^5.0.2"
   }
 }
-
