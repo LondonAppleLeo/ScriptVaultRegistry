@@ -59,9 +59,10 @@ export default function Page() {
 
         // Load ABI & Address
         try {
+          const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
           const [abiJson, addrMap] = await Promise.all([
-            fetch("/abi/ScriptVaultRegistryABI.json").then((r) => r.json()),
-            fetch("/abi/ScriptVaultRegistryAddresses.json").then((r) => r.json()),
+            fetch(`${base}/abi/ScriptVaultRegistryABI.json`).then((r) => r.json()),
+            fetch(`${base}/abi/ScriptVaultRegistryAddresses.json`).then((r) => r.json()),
           ]);
           setAbi(abiJson);
           const addr = addrMap[useMock ? "localhost" : "sepolia"] || addrMap["sepolia"] || addrMap["localhost"];

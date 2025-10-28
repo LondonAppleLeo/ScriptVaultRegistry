@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
+    "export": "next export",
+    "build:static": "next build && next export",
     "start": "next start -p 3000",
     "dev:mock": "cross-env NEXT_PUBLIC_USE_MOCK=1 next dev -p 3000"
   },
